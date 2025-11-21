@@ -58,7 +58,7 @@ Fitur CRUD:
 ![alt text](https://github.com/FauziRikhsana/FauziRikhshana_23552011030_UTS_Pemograman_Web1/blob/main/Tugas%20web/Tes%20API%20bruno.png?raw=true)
 
  **GET** (Menampilkan data)
- ![alt text] (https://github.com/FauziRikhsana/FauziRikhshana_23552011030_UTS_Pemograman_Web1/blob/main/Tugas%20web/GET%20Detail.pngraw=true)
+ ![alt text] (https://github.com/FauziRikhsana/FauziRikhshana_23552011030_UTS_Pemograman_Web1/blob/main/Tugas%20web/GET%20Detail.png?raw=true)
  **POST** (Menambah data)
  ![alt text](https://github.com/FauziRikhsana/FauziRikhshana_23552011030_UTS_Pemograman_Web1/blob/main/Tugas%20web/POST%20(Create).png?raw=true)
  **PUT** (Update data)
