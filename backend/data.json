@@ -1,0 +1,25 @@
+{
+  "infos": [
+    {
+      "id": 1,
+      "title": "Visi dan Misi Perusahaan",
+      "summary": "Visi & misi perusahaan...",
+      "body": "Isi lengkap visi, misi dan nilai-nilai ...",
+      "img": "./assets/JS/img/logo_perusahaan.png"
+    },
+    {
+      "id": 2,
+      "title": "Produk Unggulan",
+      "summary": "Produk unggulan kami...",
+      "body": "Detail produk unggulan ...",
+      "img": "./assets/JS/img/produk.png"
+    },
+    {
+      "id": 5,
+      "title": "Informasi Baru",
+      "summary": "UTS Pemograman web 1",
+      "body": "Fauzi Rikhshana",
+      "img": "./assets/JS/img/program.png"
+    }
+  ]
+}

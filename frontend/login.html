@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">yuk belajar</a>
+  </div>
+</nav>
+
+<main class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h4 class="card-title mb-3">Login</h4>
+          <form id="loginForm" onsubmit="return validateLogin();">
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input id="username" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input id="password" type="password" class="form-control" required>
+            </div>
+            <div id="loginMsg" class="text-danger mb-2" style="display:none;"></div>
+            <button class="btn btn-primary w-100" type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+      <p class="text-center mt-3 small">Belum punya akun? <a href="register.html">Register</a></p>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white border-top py-3 fixed-bottom">
+  <div class="container text-center small">
+    @Copyright by NPM_23552011030_Fauzi_Rikhshana_CNSA
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+  // Contoh credentials dummy (di dunia nyata harus server-side)
+  const validUsers = [
+    { username: 'user1', password: 'pass1' },
+    { username: 'admin', password: 'admin123' }
+  ];
+
+  function validateLogin() {
+    const u = document.getElementById('username').value.trim();
+    const p = document.getElementById('password').value;
+    const msg = document.getElementById('loginMsg');
+
+    // Gunakan struktur percabangan IF sesuai soal
+    if (u === '' || p === '') {
+      msg.style.display = 'block';
+      msg.textContent = 'Username dan password harus diisi';
+      return false;
+    } else {
+      let success = false;
+      // periksa setiap user valid
+      for (let i = 0; i < validUsers.length; i++) {
+        if (u === validUsers[i].username) {
+          if (p === validUsers[i].password) {
+            success = true;
+            break;
+          } else {
+            success = false;
+            break;
+          }
+        }
+      }
+
+      if (success) {
+        // redirect ke menu utama
+        window.location.href = 'menu.html';
+        return false; // mencegah submit default
+      } else {
+        msg.style.display = 'block';
+        msg.textContent = 'Login gagal: username atau password salah';
+        return false;
+      }
+    }
+  }
+</script>
+</body>
+</html>
